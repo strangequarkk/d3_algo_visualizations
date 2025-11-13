@@ -25,7 +25,6 @@
         </p>
         <div class="viz-group">
           <h3>QuickFind</h3>
-          <div id="quickfind-viz"></div>
           <p>
             TODO: explanation of quickfind, big O performance of union and find
             commands, it's a way of modelling node relationships that
@@ -33,6 +32,32 @@
             between 2 nodes, does not hold information about how long the
             connection path is or what nodes are along that path.
           </p>
+          <div class="visualization">
+            <div id="quickfind-viz"></div>
+            <form id="qf-form">
+              <label for="qf_node1">Node 1</label
+              ><input
+                type="number"
+                max="9"
+                min="0"
+                name="qf_node1"
+                id="qf_node1"
+                step="1"
+              />
+              <br />
+              <label for="qf_node2">Node 2</label
+              ><input
+                type="number"
+                max="9"
+                min="0"
+                name="qf_node2"
+                id="qf_node2"
+                step="1"
+              />
+              <button id="qf_union">Union</button>
+              <button id="qf_find">Find</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
